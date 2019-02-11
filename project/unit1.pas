@@ -155,9 +155,22 @@ var i : integer;
 begin
 for i:= 0 to 7 do
 begin
-canvas.Rectangle(l,Form1.Height,l+20,Form1.Height-a[i]);
-l:= l+25;
+ if a[i]>0 then
+ begin
+ Canvas.Brush.Color:=clGreen;
+ canvas.Rectangle(l,Form1.Height,l+20,Form1.Height-a[i]);
+ l:= l+25;
+ end
+ else if a[i]<0 then
+ begin
+ canvas.brush.color:=clred;
+ Canvas.Rectangle(l,Form1.Height,l+20,Form1.Height-(a[i]-(a[i]+a[i])));
+ l:= l+25;
+ end;
+
+
 end;
+
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
@@ -277,32 +290,32 @@ end;
 
 procedure TForm1.Shape1ChangeBounds(Sender: TObject);
 begin
-  Shape1.Hide;
+
 end;
 
 procedure TForm1.Shape2ChangeBounds(Sender: TObject);
 begin
-  Shape2.Hide;
+
 end;
 
 procedure TForm1.Shape3ChangeBounds(Sender: TObject);
 begin
-  Shape4.Hide;
+
 end;
 
 procedure TForm1.Shape4ChangeBounds(Sender: TObject);
 begin
-  Shape3.Hide;
+
 end;
 
 procedure TForm1.Shape5ChangeBounds(Sender: TObject);
 begin
-  Shape5.Hide;
+
 end;
 
 procedure TForm1.Shape6ChangeBounds(Sender: TObject);
 begin
-  Shape6.Hide;
+
 end;
 
 end.

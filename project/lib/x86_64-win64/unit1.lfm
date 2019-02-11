@@ -1,11 +1,12 @@
 object Form1: TForm1
-  Left = 88
+  Left = 135
   Height = 555
-  Top = 182
+  Top = 167
   Width = 734
   Caption = 'Масив'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 555
+  ClientWidth = 734
+  DesignTimePPI = 120
   Position = poScreenCenter
   LCLVersion = '1.8.4.0'
   object Button1: TButton
@@ -42,7 +43,7 @@ object Form1: TForm1
   end
   object Edit1: TEdit
     Left = 16
-    Height = 23
+    Height = 28
     Top = 344
     Width = 384
     TabOrder = 2
@@ -56,7 +57,7 @@ object Form1: TForm1
   end
   object SpinEdit1: TSpinEdit
     Left = 272
-    Height = 23
+    Height = 28
     Top = 6
     Width = 50
     MaxValue = 365
@@ -68,7 +69,7 @@ object Form1: TForm1
     Left = 8
     Height = 21
     Top = 6
-    Width = 225
+    Width = 224
     Caption = 'Кількість елементів масиву'
     Font.CharSet = RUSSIAN_CHARSET
     Font.Height = -16
@@ -119,7 +120,7 @@ object Form1: TForm1
     Left = 576
     Height = 21
     Top = 0
-    Width = 154
+    Width = 150
     Caption = 'Made by Ilya Borsh'
     Font.CharSet = ANSI_CHARSET
     Font.Height = -16
@@ -180,16 +181,16 @@ object Form1: TForm1
   end
   object Edit2: TEdit
     Left = 200
-    Height = 23
+    Height = 28
     Top = 397
     Width = 200
     TabOrder = 12
   end
   object Label6: TLabel
     Left = 16
-    Height = 18
+    Height = 17
     Top = 400
-    Width = 171
+    Width = 158
     Caption = 'Введіть елемент масиву'
     Font.CharSet = RUSSIAN_CHARSET
     Font.Height = -13
@@ -227,14 +228,6 @@ object Form1: TForm1
     OnClick = Button12Click
     TabOrder = 15
   end
-  object Shape1: TShape
-    Left = 416
-    Height = 168
-    Top = 344
-    Width = 33
-    OnChangeBounds = Shape1ChangeBounds
-    Visible = False
-  end
   object Button13: TButton
     Left = 413
     Height = 34
@@ -243,45 +236,5 @@ object Form1: TForm1
     Caption = 'Button13'
     OnClick = Button13Click
     TabOrder = 16
-  end
-  object Shape2: TShape
-    Left = 472
-    Height = 168
-    Top = 344
-    Width = 33
-    OnChangeBounds = Shape2ChangeBounds
-    Visible = False
-  end
-  object Shape3: TShape
-    Left = 584
-    Height = 168
-    Top = 344
-    Width = 33
-    OnChangeBounds = Shape3ChangeBounds
-    Visible = False
-  end
-  object Shape4: TShape
-    Left = 528
-    Height = 168
-    Top = 344
-    Width = 33
-    OnChangeBounds = Shape4ChangeBounds
-    Visible = False
-  end
-  object Shape5: TShape
-    Left = 640
-    Height = 168
-    Top = 344
-    Width = 33
-    OnChangeBounds = Shape5ChangeBounds
-    Visible = False
-  end
-  object Shape6: TShape
-    Left = 696
-    Height = 168
-    Top = 344
-    Width = 33
-    OnChangeBounds = Shape6ChangeBounds
-    Visible = False
   end
 end
