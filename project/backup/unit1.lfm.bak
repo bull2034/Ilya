@@ -1,0 +1,287 @@
+object Form1: TForm1
+  Left = 88
+  Height = 555
+  Top = 182
+  Width = 734
+  Caption = 'Масив'
+  ClientHeight = 0
+  ClientWidth = 0
+  Position = poScreenCenter
+  LCLVersion = '1.8.4.0'
+  object Button1: TButton
+    Left = 8
+    Height = 41
+    Top = 48
+    Width = 208
+    Caption = 'Введення елементів масиву'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 41
+    Top = 112
+    Width = 208
+    Caption = 'Виведення елементів масиву'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 23
+    Top = 344
+    Width = 384
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 146
+    Top = 184
+    Width = 384
+    TabOrder = 3
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 272
+    Height = 23
+    Top = 6
+    Width = 50
+    MaxValue = 365
+    MinValue = 1
+    TabOrder = 4
+    Value = 1
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 21
+    Top = 6
+    Width = 225
+    Caption = 'Кількість елементів масиву'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button3: TButton
+    Left = 256
+    Height = 36
+    Top = 48
+    Width = 121
+    Caption = 'Сума'
+    OnClick = Button3Click
+    TabOrder = 5
+  end
+  object Button4: TButton
+    Left = 416
+    Height = 36
+    Top = 117
+    Width = 121
+    Caption = 'Добуток'
+    OnClick = Button4Click
+    TabOrder = 6
+  end
+  object Button5: TButton
+    Left = 256
+    Height = 36
+    Top = 117
+    Width = 121
+    Caption = 'Квадрат числа'
+    OnClick = Button5Click
+    TabOrder = 7
+  end
+  object Button6: TButton
+    Left = 416
+    Height = 36
+    Top = 48
+    Width = 121
+    Caption = 'Середнє значення'
+    OnClick = Button6Click
+    TabOrder = 8
+  end
+  object Label2: TLabel
+    Left = 576
+    Height = 21
+    Top = 0
+    Width = 154
+    Caption = 'Made by Ilya Borsh'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button7: TButton
+    Left = 416
+    Height = 33
+    Top = 184
+    Width = 121
+    Caption = '0 T'
+    OnClick = Button7Click
+    TabOrder = 9
+  end
+  object Button8: TButton
+    Left = 568
+    Height = 36
+    Top = 117
+    Width = 123
+    Caption = 'Від''ємні  T'
+    OnClick = Button8Click
+    TabOrder = 10
+  end
+  object Button9: TButton
+    Left = 568
+    Height = 36
+    Top = 48
+    Width = 123
+    Caption = 'додатні T'
+    OnClick = Button9Click
+    TabOrder = 11
+  end
+  object Label3: TLabel
+    Left = 616
+    Height = 1
+    Top = 88
+    Width = 1
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 616
+    Height = 1
+    Top = 168
+    Width = 1
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 616
+    Height = 1
+    Top = 240
+    Width = 1
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 200
+    Height = 23
+    Top = 397
+    Width = 200
+    TabOrder = 12
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 18
+    Top = 400
+    Width = 171
+    Caption = 'Введіть елемент масиву'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = '@Arial Unicode MS'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button10: TButton
+    Left = 568
+    Height = 33
+    Top = 184
+    Width = 123
+    Caption = ' Знайти елемент'
+    OnClick = Button10Click
+    TabOrder = 13
+  end
+  object Button11: TButton
+    Left = 416
+    Height = 25
+    Top = 248
+    Width = 122
+    Caption = 'Найбільше '
+    OnClick = Button11Click
+    TabOrder = 14
+  end
+  object Button12: TButton
+    Left = 568
+    Height = 25
+    Top = 248
+    Width = 123
+    Caption = 'Найменше'
+    OnClick = Button12Click
+    TabOrder = 15
+  end
+  object Shape1: TShape
+    Left = 416
+    Height = 168
+    Top = 344
+    Width = 33
+    OnChangeBounds = Shape1ChangeBounds
+    Visible = False
+  end
+  object Button13: TButton
+    Left = 413
+    Height = 34
+    Top = 296
+    Width = 92
+    Caption = 'Button13'
+    OnClick = Button13Click
+    TabOrder = 16
+  end
+  object Shape2: TShape
+    Left = 472
+    Height = 168
+    Top = 344
+    Width = 33
+    OnChangeBounds = Shape2ChangeBounds
+    Visible = False
+  end
+  object Shape3: TShape
+    Left = 584
+    Height = 168
+    Top = 344
+    Width = 33
+    OnChangeBounds = Shape3ChangeBounds
+    Visible = False
+  end
+  object Shape4: TShape
+    Left = 528
+    Height = 168
+    Top = 344
+    Width = 33
+    OnChangeBounds = Shape4ChangeBounds
+    Visible = False
+  end
+  object Shape5: TShape
+    Left = 640
+    Height = 168
+    Top = 344
+    Width = 33
+    OnChangeBounds = Shape5ChangeBounds
+    Visible = False
+  end
+  object Shape6: TShape
+    Left = 696
+    Height = 168
+    Top = 344
+    Width = 33
+    OnChangeBounds = Shape6ChangeBounds
+    Visible = False
+  end
+end
