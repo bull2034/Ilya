@@ -153,6 +153,8 @@ procedure TForm1.Button13Click(Sender: TObject);
 var i : integer;
   r: array [0..7] of TShape;
 begin
+ Holst.Canvas.FillRect(Holst.ClientRect);
+
 for i:= 0 to 7 do
 begin
  if a[i]>0 then

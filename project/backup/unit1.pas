@@ -155,13 +155,13 @@ var i : integer;
 begin
 for i:= 0 to 7 do
 begin
- if i>0 then
+ if a[i]>0 then
  begin
  Canvas.Brush.Color:=clGreen;
  canvas.Rectangle(l,Form1.Height,l+20,Form1.Height-a[i]);
  l:= l+25;
  end
- else if i<0 then
+ else if a[i]<0 then
  begin
  canvas.brush.color:=clred;
  Canvas.Rectangle(l,Form1.Height,l+20,Form1.Height-(a[i]-(a[i]+a[i])));
